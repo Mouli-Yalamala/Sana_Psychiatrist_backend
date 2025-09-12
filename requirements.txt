@@ -1,0 +1,9 @@
+scipy
+SpeechRecognition
+groq
+uvicorn[standard]
+fastapi
+pydantic
+pydub
+python-multipart
+pyttsx3
