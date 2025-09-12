@@ -19,7 +19,7 @@ import tempfile
 
 app = FastAPI(title="Psychartist Chatbot API with Audio")
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "xxxxxxxxxxxxxxx"
 MODEL = "llama-3.1-8b-instant"
 CHAT_HISTORY_FILE = "chat_history.json"
 DEFAULT_LANGUAGE = "english"
