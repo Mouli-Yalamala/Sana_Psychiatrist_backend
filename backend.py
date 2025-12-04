@@ -17,9 +17,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydub import AudioSegment
 import tempfile
 
+from dotenv import load_dotenv
+
 app = FastAPI(title="Psychartist Chatbot API with Audio")
 
-GROQ_API_KEY = "xxxxxxxxxxxxxxx"
+load_dotenv()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 MODEL = "llama-3.1-8b-instant"
 CHAT_HISTORY_FILE = "chat_history.json"
 DEFAULT_LANGUAGE = "english"
